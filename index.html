@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>GoT Battles</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  
+  <div class="Container p-3">
+    <div class="mb-4">
+        <!-- <img id="titleScroll" src="assets/images/TitleScroll.png" /> -->
+        <h1>Game of Thrones Battle Arena</h1>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="mr-3 pr-3 instructions">
+          <!-- Instructions -->
+          <h3>Instructions</h3>
+          <ul>
+            <li>When the game starts click on the character you want to play.</li>
+            <li>The rest of the charaters will become your opponents whom you must defeat to win.</li>
+            <li>Select the first opponent to fight.</li>
+            <li>Click the Attach button to attack the selected opponent and damage their health.</li>
+            <li>They will immediatly count attack you and damage your health.</li>
+            <li>When you bring an opponent's health to or below zero they are defeated and you pick another opponent.</li>
+            <li>You win by defeating all the opponents and lose if your health drops to zero.</li>
+            <li>Each chaharter has a different attack, counter attack and health.</li>
+            <li>Each time you attach your character's attack will increase by its base value.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <div id="characters" class="row justify-content-center">
+          <!-- display available characters -->
+        </div>
+        <div class="row main">
+          <div id="player" class="col-6">
+            <!-- Your character -->
+          </div>
+          <div id="enemy" class="col-6">
+            <!-- Current defender -->
+          </div>
+          <div class="row m-auto">
+            <button id="attack" class="btn btn-danger p-3">Attack</button>
+            <button id="newGame" class="btn btn-success p-3">New Game</button>
+          </div>
+          <div id="messages" class="row mt-3 ml-0">
+            <!-- message are displayed here -->
+          </div>
+        </div>
+      </div>
+      <div id="opponets" class="col-3">
+        <!-- list of remaining opponets -->
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>
