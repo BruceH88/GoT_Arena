@@ -124,7 +124,7 @@ function enemySelected(idSelected) {
     }
   }
   $attack.show();
-  $messages.text("Click Attack to strike the opponent.");
+  $messages.text("Click 'Attack' to strike the opponent.");
 }
 // on click event on attack button
 //   enemy takes players attack
@@ -153,7 +153,7 @@ function attackEnemy() {
       console.log("Opponents left " + $opponets.length)
       $messages.append("<br>Select your next opponent.");
     } else {
-      $messages.append("<br>Congratulations that was your last opponent you win!");
+      $messages.append("<br>Congratulations, that was your last opponent, you win!");
       gameRunning = false;
       $newGame.show();
       $attack.hide();
