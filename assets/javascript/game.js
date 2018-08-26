@@ -150,7 +150,6 @@ function attackEnemy() {
     enemyPicked = false;
     opponentsLeft--;
     if (opponentsLeft > 0) {
-      console.log("Opponents left " + $opponets.length)
       $messages.append("<br>Select your next opponent.");
     } else {
       $messages.append("<br>Congratulations, that was your last opponent, you win!");
